@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Natural Disaster Prediction System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Natural Disaster Prediction System</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="location_risk_factor">Location Risk Factor:</label>
+                <input type="number" id="location_risk_factor" name="location_risk_factor" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="population_density">Population Density:</label>
+                <input type="number" id="population_density" name="population_density" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="historical_frequency">Historical Frequency:</label>
+                <input type="number" id="historical_frequency" name="historical_frequency" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="infrastructure_quality">Infrastructure Quality:</label>
+                <input type="number" id="infrastructure_quality" name="infrastructure_quality" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="climate_volatility">Climate Volatility:</label>
+                <input type="number" id="climate_volatility" name="climate_volatility" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="response_readiness">Response Readiness:</label>
+                <input type="number" id="response_readiness" name="response_readiness" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="economic_impact">Economic Impact:</label>
+                <input type="number" id="economic_impact" name="economic_impact" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="time_of_year">Time of Year:</label>
+                <select id="time_of_year" name="time_of_year" class="form-control" required>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Fall</option>
+                    <option value="Winter">Winter</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Predict Disaster Risk</button>
+        </form>
+    </div>
+</body>
+</html>

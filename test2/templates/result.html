@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Natural Disaster Prediction System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Natural Disaster Prediction Result</h2>
+        <p>The predicted disaster risk is: <strong>{{ prediction }}</strong></p>
+        <p>Based on the input values, the disaster risk level is:</p>
+        {% if prediction | int < 30 %}
+            <p style="color: green;">Low</p>
+        {% elif prediction | int >= 30 and prediction | int < 60 %}
+            <p style="color: orange;">Moderate</p>
+        {% else %}
+            <p style="color: red;">High</p>
+        {% endif %}
+    </div>
+</body>
+</html>
